@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif; 
+
+}
+
+body#corpo{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.center{
+    width: 85%;
+    background-color: lightgrey;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.bloco{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.center .bloco {
+    display: flex;
+    align-items: center;/*centralizado o texto dentro do bloco verticalmente*/
+    justify-content: space-between;
+}
+
+.center .bloco .direita{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;/*se torna coluna novamento um embaixo do outro*/
+    align-items: center;/*centralizou apenas a coluna direita*/
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+    
+}
+
+/*linha vertical depois da div direita*/
+.direita::before{
+    content: '';
+    position: absolute;/*só aparece a linha se for absoluta*/
+    height: 70%;/*altura da linha*/
+    width: 2px;/*largura da linha*/
+    right: -25px;
+    top: 50%;/*deixar a linha na metade*/
+    transform: translateY(-50%);/*deixar a linha na metade*/    
+    background-color: aqua;
+}
+/*Detalhes do direita*/
+.direita .detalhes-direita{
+    margin: 14px;
+    text-align: center;
+
+}
+div.detalhes-direita .texto{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 540;
+    color: #90562E;
+}
+
+div.complementar{
+    font-size: 14px;
+    color: grey;
+}
+
+/*parte esquerda*/
+
+
+.esquerda{
+    width: 75%;
+    margin-left: 75px;
+}
+
+.esquerda .msg {
+    /*envie aqui sua mensagem*/
+    font-size: 23pt;
+    font-weight: 600;
+    color: #90562E;
+
+}
+
+.informe {
+    height: 50px;
+    width: 100%;
+    margin: 12px auto;
+}
+input, #msgb{
+    height: 100%;/*tamanho do campo de digitar*/
+    padding: 0 15px;
+    width: 100%;/*largura do campo de digitação*/
+    border: none;
+    outline: none;
+    font-size: 16pt; 
+    border-radius: 6px;
+    /*background-color: ;*/
+    resize: none;
+    overflow: none;
+    cursor: pointer;
+}
+#msgb {
+    min-height: 110px;
+    padding-top: 6px;
+}
+
+input:hover, #msgb:hover{
+    background-color:#F0F1F8 ;
+}
+/*Botão*/
+.esquerda #but{
+    display: inline-block;
+    margin-top: 70px;
+
+    font-size: 18pt;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    width: 100px;
+    background-color: #90552ec2;
+    transition: all 0.3s ease;    
+}
+.esquerda #but:hover{
+    background-color: gray;
+}
+
+
+/*resposividade*/
+@media(max-width: 820px) {
+    .center{
+        margin:  40px 0;
+        height: 100%;
+    }
+    .bloco{
+        flex-direction: column;
+    }
+    .esquerda{
+        width: 100%;
+        flex-direction: row-reverse;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .direita::before{
+        display: none;
+    }
+    .direita{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+/*
+
+PARA FICAR NO CENTRO
+justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;não é necessário
+    left: 0;não é necessário
+    display: flex;*/
+
+
+
+
+
+
+
+

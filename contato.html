@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="shortcut icon" href="imagens/certo/icone-p.png" type="image/x-icon">
+
+
+    <script>
+        function mensagens(){
+            var msg = parseInt(document.getElementById('').value)
+
+
+        }
+
+
+
+    </script>
+   
+   
+</head>
+<body id="port">
+
+    <div id="interface">   
+    
+        <header class="header">   
+             
+            <a href="index.html">
+                <h1>Flávio Morais</h1>
+                <div id="sub"> <img id="img" src="imagens/certo/icone.png" alt=""> Fotografia</div>
+            </a>
+            
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio </a>
+                    <li><a href="portfolio.html">Portfilios </a>
+                                       
+                    <li><a href="servico.html">Serviços</a>
+                    <li><a href="contato.html">Contatos</a> 
+                    <li><a href="#"><img alt="Instagram" src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_41,h_41,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/81af6121f84c41a5b4391d7d37fce12a.png" style="width: 37px; height: 27px; object-fit: cover;"></a></li>                         
+                    <li><a href="#"><img alt="Facebook" src="https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_41,h_41,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png" style="width: 37px; height: 27px; object-fit: cover; margin-left: -30px;"></a></li>
+                        
+                        
+                        </li>    
+                          
+
+                </ul>                  
+                    
+        </nav>   
+
+        
+
+    </header>
+
+        <h2>Contatos</h2>   
+
+
+        <body id="corpo">
+
+
+            <div class="center">
+                
+                    <main class="bloco">                    
+                            <section class="esquerda">
+            
+                                <div class="msg">Envie aqui sua mensagem:</div>
+            
+                                <form action="mailton:emanoelgigant@gmail.com" method="get" id="fcontato" oninput="mensagens()"><!--tem que criar a função em javascript-->
+                                    <div class="informe"><input type="text" name="nomet" id="nomeb" placeholder="Digite seu nome" size="20" maxlength="30"></div>
+            
+                                    <div class="informe"><input type="text" name="emailt" id="emailb" placeholder="Digite seu E-mail" size="20" maxlength="40"></div>
+            
+                                    <div class="informe"><textarea name="msgt" id="msgb" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea></div>
+
+                                    <div> <input type="button" id="but" value="Enviar"></div>
+                            </section>                            
+                           
+            
+                        </form>
+                
+                
+                        <section class="direita">
+                            
+                            <div class="detalhes-direita">
+                                <div class="texto">Endereço</div>
+                                <div class="complementar">Rua do Horto, 573</div>
+                                <div class="complementar">Bairro Horto</div>
+                                <div class="texto">Telefone</div>
+                                <div class="complementar">8899642-6349</div>
+                                <div class="texto">E-mail</div>
+                                <div class="complementar">flavio.morais@gmail.com</div>
+                            </div>
+            
+                
+                    </section>
+                
+                </main>
+            </div>        
+        <footer id="rodape">
+
+            <p><a href="#">Facebook</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Instagram</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">WhatsApp</a> </p>
+    
+        </footer>
+    </body>
+    </html>

@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif; 
+
+}
+
+body#corpo{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+div h2{
+    color: gray;
+    text-indent: 100px;
+    font-family: 'novo';
+    font-size: 30pt;
+    font-weight: normal;
+    padding-top: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.748);
+
+}
+.center{
+    width: 85%;
+}
+main.bloco{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.center .bloco {
+    display: flex;
+    align-items: center;/*centralizado o texto dentro do bloco verticalmente*/
+    justify-content: space-between;
+}
+
+.center .bloco .direita{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;/*se torna coluna novamento um embaixo do outro*/
+    align-items: center;/*centralizou apenas a coluna direita*/
+    justify-content: center;
+    position: relative;
+    
+}
+
+/*linha vertical depois da div direita*/
+.direita::before{
+    content: '';
+    position: absolute;/*só aparece a linha se for absoluta*/
+    height: 100%;/*altura da linha*/
+    width: 2px;/*largura da linha*/
+    right: -10px;
+    top: 50%;/*deixar a linha na metade*/
+    transform: translateY(-50%);/*deixar a linha na metade*/    
+    background-color: white;
+}
+/*Detalhes do direita*/
+.direita .detalhes-direita{
+    margin: 14px;
+    text-align: center;
+
+}
+div.detalhes-direita .texto{
+    font-size: 20pt;
+    margin-top: 15px;
+    font-weight: 540;
+    color: white;
+}
+
+div.complementar{
+    font-size: 14px;
+    color: grey;
+}
+
+/*parte esquerda*/
+
+
+.esquerda{
+    width: 90%;
+    margin-left: 75px;
+}
+
+.esquerda .msg {
+    /*envie aqui sua mensagem*/
+    font-size: 23pt;
+    font-weight: 600;
+    color: white;
+
+}
+
+.informe {
+    height: 50px;
+    width: 100%;
+    margin: 12px auto;
+}
+input, #msgb{
+    height: 100%;/*tamanho do campo de digitar*/
+    padding: 0 15px;
+    width: 100%;/*largura do campo de digitação*/
+    border: none;
+    outline: none;
+    font-size: 16pt; 
+    border-radius: 6px;
+    resize: none;
+    overflow: none;
+    cursor: pointer;
+}
+#msgb {
+    min-height: 110px;
+    padding-top: 6px;
+}
+
+input:hover, #msgb:hover{
+    background-color:#F0F1F8 ;
+}
+
+
+form input[type=button]{
+
+    display:inline;
+    width: 100px;
+    font-size: 18pt;
+    border: none;
+    padding: 8px 16px;
+    background-color: rgb(94, 93, 93);
+    transition: all 0.3s ease;    
+    color: white;
+    margin-top: 65px;
+    outline: none;
+    
+}
+
+
+/*Botão*/
+
+input#but:hover{
+    background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

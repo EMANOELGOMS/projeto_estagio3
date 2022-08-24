@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+figure.album {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+figure.album img{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.594);
+
+}
+
+div h2{
+    color: gray;
+    text-indent: 100px;
+    font-family: 'novo';
+    font-size: 30pt;
+    font-weight: normal;
+    padding-top: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.748);
+
+}
+/*sombra*/
+figure.album figcaption {
+    opacity: 0;
+    position: absolute;/*junta a sombra com imagem*/
+    top: 0px;
+    background-color:rgba(0,0 ,0,.5);
+    color: white;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    box-sizing: border-box;/*enquadra a sombra com a caixa box*/
+    transition: 1.2s ease-out;
+
+}
+figure.album figcaption:hover{
+    opacity: 1;
+
+}
+figure.album figcaption p{
+    font-size: 50pt;
+    color: lightgrey;
+    font-family: 'novo';
+    text-align: center;
+    position: relative;
+    top: 80px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.646);
+
+}
+
+section#caixa{
+    position: relative;
+    padding: 30px 100px 0px 100px;
+    width: 850px;
+    
+    
+}
+figure{
+    transition: .2s ease-in;
+
+}
+
+figure:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    padding-top: 20px;
+}

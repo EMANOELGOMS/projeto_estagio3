@@ -52,11 +52,12 @@ body{
 
    
 }
-@media(max-width: 900px) {
+@media(max-width: 970px) {
     #interface{
         width: 850px;
     }
     .header{
+
         width: 850px;
        
     }
@@ -64,8 +65,9 @@ body{
         display: none;
        
     }
-    article.fotos{
-        display: flex;
+    
+    .fotos{
+        display: none;
         justify-content: center;
     }
 
@@ -73,8 +75,9 @@ body{
         margin-left: 17% ;
     }
 
-    
 }
+
+
 .header h1{
     color:#ffffff;
     font-family:var(--fontaside);
